@@ -12,4 +12,3 @@ m_c = m_a + m_b
 MEDIA = m_c / (peso_a + peso_b)
 
 print(f'MEDIA = {MEDIA:.5f}')
-

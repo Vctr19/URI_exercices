@@ -20,3 +20,4 @@ def encontrar_par_e_impar(n):
     print(impar, par)
 
 encontrar_par_e_impar(natural)
+

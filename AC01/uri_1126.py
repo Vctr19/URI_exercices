@@ -8,16 +8,18 @@ semana = ('domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado')
 def calc_prazo(prazo, dia_compra):
 
     if prazo == 0:
-        return 'chega hoje!'
+        res = 'chega hoje!'
     else:
         dia_compra_index = semana.index(dia_compra)
         prazo_index = dia_compra_index + prazo
 
         if prazo_index >= len(semana):
             dia_entrega = semana[prazo_index - len(semana)]
-            return f'sera entregue {dia_entrega}'
+            res = f'sera entregue {dia_entrega}'
         else:
-            return f'sera entregue {semana[prazo_index]}'
+            res = f'sera entregue {semana[prazo_index]}'
+
+    return res
 
 print(calc_prazo(prazo, dia_semana))
 
